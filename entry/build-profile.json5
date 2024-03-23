@@ -1,0 +1,17 @@
+{
+  "apiType": 'stageMode',
+  "buildOption": {
+    "sourceOption": {
+      "workers": []
+    }
+  },
+  "targets": [
+    {
+      "name": "default",
+      "runtimeOS": "HarmonyOS"
+    },
+    {
+      "name": "ohosTest",
+    }
+  ]
+}

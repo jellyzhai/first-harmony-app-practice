@@ -1,0 +1,53 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\eser\\.ohos\\config\\auto_debug_MyApplication_com.example.myapplication_260086000098336332.cer",
+          "storePassword": "0000001BD67694A3CBDED790774F5258C4E8F3CDF613983657DABAF9F1D0DC966B38ABC5970415A91E822E",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BE8C44B9C5D0227EE64BFF121C035CEB6A1066FA9159CDD1CDD5DAF18B4836EF3A5BDE48F65ADC7",
+          "profile": "C:\\Users\\eser\\.ohos\\config\\auto_debug_MyApplication_com.example.myapplication_260086000098336332.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\eser\\.ohos\\config\\auto_debug_MyApplication_com.example.myapplication_260086000098336332.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "shared_library",
+      "srcPath": "./shared_library",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

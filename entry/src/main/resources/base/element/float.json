@@ -1,0 +1,12 @@
+{
+  "float": [
+    {
+      "name": "text_regexp",
+      "value": "/\\d/"
+    },
+    {
+      "name": "font_size",
+      "value": "16fp"
+    }
+  ]
+}

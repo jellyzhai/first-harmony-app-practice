@@ -1,0 +1,80 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "srcEntry": "./ets/myAbilityStage/MyAbilityStage.ets",
+    "description": "$string:module_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ts",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:EntryAbility_hap_practice",
+//        "orientation": "auto_rotation",
+        /*
+         * single 单例模式: 每次启动都是同一实例，只创建一次实例，并保留一个实例；默认
+         * multiton: 每次启动，都创建一次，但会删除之前的实例 只保留一个 ability 实例
+         * standard: 每次启动，都创建一次，不会删除之前的实例 保留多个 ability 实例
+         * specified: 每次指定key启动ability，如果系统中没有指定key对应的ability实例，就创建，如果存在，就直接启动；
+            - 适合文档列表应用，点击不同文档，去启动多个不同key的编辑文档应用，下次再从文档列表点击，会进入之前指定key创建的对应文档编辑应用
+         */
+        "launchType": "singleton",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "DocumentAbility",
+        "srcEntry": "./ets/documentability/DocumentAbility.ts",
+        "launchType": "specified",
+        "description": "$string:DocumentAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:DocumentAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background"
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "EntryFormAbility",
+        "srcEntry": "./ets/entryformability/EntryFormAbility.ts",
+        "label": "$string:EntryFormAbility_label",
+        "description": "$string:EntryFormAbility_desc",
+        "type": "form",
+        "metadata": [
+          {
+            "name": "ohos.extension.form",
+            "resource": "$profile:form_config"
+          }
+        ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.READ_USER_STORAGE"
+      }
+    ]
+  }
+}

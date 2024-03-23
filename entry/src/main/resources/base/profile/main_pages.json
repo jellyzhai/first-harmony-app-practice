@@ -1,0 +1,23 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/SharedElePageA",
+    "pages/SharedElePageB",
+    "pages/PropertyAnimation",
+    "pages/TabsLayout",
+    "pages/GridRowGridCol",
+    "pages/FlexLayout",
+    "pages/NavigationLayout",
+    "pages/RelativeContainerLayout",
+    "pages/PositionSet",
+    "pages/MarqueeText",
+    "pages/HttpRequest",
+    "pages/AxiosRequest",
+    "pages/PreferenceSetting",
+    "pages/RelationalDataBase",
+    "pages/NotificationManagerPractice",
+    "pages/DocumentEditor",
+    "pages/DocumentList",
+    "pages/FishGameAnimation"
+  ]
+}
