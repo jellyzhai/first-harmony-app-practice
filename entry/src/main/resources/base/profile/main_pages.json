@@ -19,5 +19,8 @@
     "pages/DocumentEditor",
     "pages/DocumentList",
     "pages/FishGameAnimation"
-  ]
+  ],
+  "window": {
+    "autoDesignWidth": true
+  }
 }

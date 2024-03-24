@@ -19,7 +19,8 @@
         "description": "$string:EntryAbility_desc",
         "icon": "$media:icon",
         "label": "$string:EntryAbility_hap_practice",
-//        "orientation": "auto_rotation",
+        // 随传感器旋转屏幕
+        // "orientation": "auto_rotation",
         /*
          * single 单例模式: 每次启动都是同一实例，只创建一次实例，并保留一个实例；默认
          * multiton: 每次启动，都创建一次，但会删除之前的实例 只保留一个 ability 实例

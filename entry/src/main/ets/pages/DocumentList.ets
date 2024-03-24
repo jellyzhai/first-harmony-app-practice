@@ -3,7 +3,7 @@ import common from '@ohos.app.ability.common'
 import { PageTitle } from '../components/PageTitle'
 import Want from '@ohos.app.ability.Want'
 
-// 4.0系统真机中无法实现持久化功能
+// 4.0系统真机中无法实现持久化功能?? 可能没有调用flush 方法将内存数据刷到磁盘
 // PersistentStorage.PersistProp('docArray', [])
 
 @Entry

@@ -36,18 +36,19 @@ struct WidgetCard {
       Column() {
         Text(this.TITLE)
           .fontSize($r('app.float.font_size'))
+        Button('打开应用主页')
+          .onClick(() => {
+            postCardAction(this, {
+              "action": this.ACTION_TYPE,
+              "abilityName": this.ABILITY_NAME,
+              "params": {
+                "message": this.MESSAGE
+              }
+            })
+          })
       }
       .width(this.FULL_WIDTH_PERCENT)
     }
     .height(this.FULL_HEIGHT_PERCENT)
-    .onClick(() => {
-      postCardAction(this, {
-        "action": this.ACTION_TYPE,
-        "abilityName": this.ABILITY_NAME,
-        "params": {
-          "message": this.MESSAGE
-        }
-      });
-    })
   }
 }
